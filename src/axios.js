@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "http://localhost:8100",
+    baseURL: "https://tiktok-mern-backend-ly.herokuapp.com",
 });
 
 export default instance; 
