@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+FRONTEND: REACT, firebase hosting , Material UI, Flexbox, 3rd party ticker , scroll snap
+
+BACKEND: Node.js, express.js server, Mongodb, hosting on Heroku, Mongoose to connect db with your application
+
+# deploy through firebase
+
+Project Console: https://console.firebase.google.com/project/tiktok-c2/overview
+Hosting URL: https://tiktok-c2.web.app
