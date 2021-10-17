@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react';
 import "./Video.css";
+import VideoFooter from './VideoFooter';
+import VideoSideBar from './VideoSideBar';
 
-function Video(){
+function Video({url, channel, description, song, likes, messages, shares }){
 
     const [playing, setPlaying ] = useState(false);
     const videoRef = useRef(null);
@@ -19,10 +21,8 @@ function Video(){
             setPlaying(true);
 
         }
-
         //otherwise if it is not playing 
         //play it
-
     }
 
     return (
@@ -32,10 +32,13 @@ function Video(){
                 className="video_player"
                 loop
                 ref={videoRef}
-                src="" >
+                src={url} >
 
             </video>
-            <h1>test video </h1>
+            <VideoFooter channel={channel}
+            description={description}
+            song={song}></VideoFooter>
+            <VideoSideBar likes={likes} shares={shares} messages= {messages} ></VideoSideBar>
         </div>
     );
 
